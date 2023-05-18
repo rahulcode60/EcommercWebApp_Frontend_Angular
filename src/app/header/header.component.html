@@ -1,0 +1,71 @@
+<html>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Ecom App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <img src="./assets/images/pic1.jpeg" width="20%" height="80%">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="" routerLink="product">All Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="login">Login</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" routerLink="cart">Cart</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="register">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="adminheader">Admin</a>
+          </li>
+
+          <li class="nav-item">
+            <select style="margin-top: 8px; color: beige;" class="bg-primary" (change)="selectProductCategory($event)">
+              <option>Product Category</option>
+              <option value="1">Mobiles</option>
+              <option value="2">Televisions</option>  
+              <option value="3">Laptops</option>
+              <option value="4">Large Appliances</option>  
+            </select>
+          </li>
+
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="true" aria-expanded="false">Category</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" (click)="selectProductCategory(1)">Action</a></li>
+              <li><a class="dropdown-item" href="#" (click)="selectProductCategory(2)">Another action</a></li>
+              <li><a class="dropdown-item" href="#" (click)="selectProductCategory(3)">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li> -->
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <app-product></app-product>
+  </div>
+</body>
+</html>
